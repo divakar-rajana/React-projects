@@ -1,24 +1,24 @@
 import React from "react";
-import App from "../App"
 
-function contactList({loginvalues}){
+function contactList({loginvalues,ondelete,id}){
   
-
-   const clickhandler=(event)=>{
-    
-  }
-    
+  console.log("id:",loginvalues[0].id)
+  
       return(
        <div>
-        {loginvalues.map((userinput) => (
-        <div className="card"><p>{userinput.email}</p>
+        {
+        loginvalues.map((userinput,key) => (
+        <div className="card">
+          
+          <p>{userinput.email}</p>
           <p>{userinput.password}</p>
-          <button className="delete" onClick={()=>clickhandler()} >DELETE</button>
+        <button className="delete" onClick={()=>ondelete(loginvalues[key].id) } >DELETE</button> 
+      {}
         </div>
       
       ))}
       </div>
-
+       
       );
     };
  

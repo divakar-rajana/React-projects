@@ -6,6 +6,7 @@ import "../static/Loginpage.css"
 function Loginpage({addloginvalues}){
     //use state for change the STATE OF input
     const[userinput,setuserinput]=useState({
+        
         email: "",
        password: "",
     });
@@ -29,7 +30,14 @@ return(
     <form className="form-menu" onSubmit={handlersubmit}>
     <div className="header">
        <h2>REGISTRATION</h2> </div>
-        {/* <label className="label-">Email</label> */}
+        
+        {/* <input type="number"
+        className="inputbox" 
+        name="id" 
+        placeholder="ID"
+        value={userinput.id}
+        onChange={handler}> 
+        </input>*/}
         <input type="email"
         className="inputbox" 
         name="email" 
@@ -38,7 +46,7 @@ return(
         onChange={handler}
         ></input>
         <br></br>
-        {/* <label className="label-">password</label> */}
+        
         <div className="password">
         <input type="Password" className="inputbox" name="password" placeholder="password" 
         value={userinput.password}
