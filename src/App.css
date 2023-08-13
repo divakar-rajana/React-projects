@@ -1,38 +1,108 @@
 .App {
-  text-align: center;
+  
+  justify-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  height: 60px;
+  width: 100%;
+  background-color: rgb(9, 128, 161);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar label{
+ 
+    margin-left: 10px;
+    width:fit-content;
+    font-size: 2rem;
+    text-align: left;
+    transform: scale();
+    display: inline-flex;
+    color: aliceblue;
+    background: linear-gradient(to right, #ffffff, #0f0f10);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    pointer-events: none;
+    animation: fade 3s ease-in 1s;
+    margin-top: 12px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar{
+  display: none;
 }
-
-.App-link {
-  color: #61dafb;
+.cointainer1{
+  height: 55px;
+  width:  50%;
+  background-color: rgb(248, 230, 175);
+  text-align: start;
+  margin-top: 12%;
+  margin-left: 25%;
+  overflow-y: scroll;
+  padding: 0.1rem;
+  border-radius: 10px 10px 0px 0px;
+  display: inline-flex;
+  gap: 10px;
 }
+.cointainer1 input{
+  background-color: transparent;
+    width: 85%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px 0px 0px 0px;
+    &::placeholder{
+      color: rgb(14, 7, 7);
+      font-size: 15px;
+      
+    }
+}
+.cointainer1 button{
+  background-color: transparent;
+  width: 90px;
+  height: 54px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 20px;
+  border-radius: 0px 10px 0px 0px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.cointainer1 button:hover{
+  background-color: rgb(1, 1, 1);
+  color: rgb(248, 230, 175);
+}
+.cointainer2{
+  height: 400px;
+  width:  50%;
+  background-color: rgb(255, 253, 250);
+  text-align: start;
+  margin-top: 2px;
+  margin-left: 25%;
+  overflow-y: scroll;
+  padding: 0.1rem;
+  border-radius: 0px 0px 20px 20px;
+}
+.details{
+  margin-top:2px;
+  width: 100%;
+  background-color: rgb(233, 134, 35);
+  height: 40px;
+  padding: 0.7rem;
+  display: inline-flex;
+  gap: 10px;
+  border-bottom: 2px solid black;
+  
+}
+.details label{
+    color: rgb(3, 3, 8);
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 650px;
+    
+}
+.details button{
+  width: 40px;
+  background-color: transparent;
+  background-image: url(Images/deleteicon.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-style: none;
+ 
 }
